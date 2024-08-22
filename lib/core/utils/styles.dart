@@ -9,7 +9,6 @@ abstract class Styles {
   static const titltextStyle20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
-    fontFamily: kGtSectraFine,
   );
   static const titltextStyle30 = TextStyle(
     fontSize: 30,
