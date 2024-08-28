@@ -13,8 +13,10 @@ class MangerBooksCubit extends Cubit<MangerBooksState> {
     emit(MangerBooksLoading());
     var result = await homeRepo.fetchFeaturedBooks();
     result.fold((failure) {
+      print("erorr");
       emit(MangerBooksFailure(failure.errMessage));
     }, (books) {
+      print(books.first.id);
       emit(MangerBooksSuccess(books));
     });
   }
